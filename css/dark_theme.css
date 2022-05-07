@@ -1,0 +1,133 @@
+:root {
+	--light: #ffffff;
+	--dark: black;
+	--brown: brown;
+	--purple: rgb(43, 7, 202);
+	--green: rgb(7, 68, 2);
+	--pink: rgb(107, 3, 121);
+	--grey: rgb(92, 92, 92);
+	--back-color: #81899b;
+	--primary-color: red;
+	--header-back: #1a1d24;
+	--header-text: #eee;
+}
+
+.switch {
+	border: 2px solid var(--dark);
+	border-radius: 50px;
+	height: 30px;
+	width: 30px;
+	margin: 10px;
+	cursor: pointer;
+}
+
+body {
+	background-color: var(--dark);
+}
+
+.box:hover {
+	background-color: var(--green);
+}
+.box {
+	background-color: var(--purple);
+	color: var(--light);
+}
+
+.footer-list a:hover {
+	background-color: var(--purple);
+	box-shadow: 2px 5px 10px 5px var(--green);
+}
+
+.categorydeal {
+	color: var(--dark);
+}
+
+.site-name {
+	color: var(--brown);
+}
+
+.site-name-background {
+	background-color: var(--purple);
+}
+
+.footer-logo-name {
+	border: 1px solid var(--pink);
+	background-color: var(--green);
+}
+
+.logo-div {
+	background-color: var(--pink);
+}
+
+.deal,
+.description h5 {
+	color: var(--light);
+}
+
+.deals {
+	background-color: var(--grey);
+}
+
+.row {
+	color: var(--light);
+}
+
+.col-md-8-mt-1,
+.card-body,
+.col-md-3,
+.col-md-9-text-secondary {
+	color: var(--dark);
+}
+
+.sign-txt {
+	color: var(--light);
+}
+
+.product-description p,
+.product-description h1,
+.product-price span {
+	color: var(--light);
+}
+
+.products-container,
+.g {
+	color: var(--light);
+}
+
+.products-container ion-icon {
+	background-color: var(--grey);
+}
+
+.wrapper {
+	background-color: var(--purple);
+}
+
+.footer-list a {
+	color: var(--light);
+}
+
+.dealsbox:hover {
+	background-color: var(--green);
+}
+
+.homepage-footer {
+	background-color: var(--brown);
+}
+
+.navbar {
+	background-color: var(--purple);
+	box-shadow: 1px 5px var(--pink);
+	border: 2px solid var(--grey);
+}
+
+.nav-list li a {
+	color: var(--light);
+}
+
+.nav-list li:hover {
+	background-color: var(--green);
+}
+
+.subscribe-buttons {
+	background-color: var(--brown);
+}

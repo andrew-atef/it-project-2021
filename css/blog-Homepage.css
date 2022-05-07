@@ -1,0 +1,823 @@
+@import url(home-page-navbar.css);
+@import url(home-page-card.css);
+@import url(home-page-footer.css);
+
+/* big containers */
+
+/* to control the whole page by grid */
+.container {
+	display: grid;
+	grid-template-columns: repeat(5, auto);
+	grid-auto-rows: 8% 5% 5% 70% 12%;
+	grid-template-areas:
+		"hp hp hp hp hp "
+		"nb nb nb nb nb"
+		"sbl pt pt pt sbr"
+		"sbl post post post sbr"
+		"ftp ftp ftp ftp ftp";
+}
+
+/* to make the cards in a container */
+.cards-container {
+	border: #3498db 3px solid;
+	border-radius: 10px;
+	background-color: #b49a7b;
+	width: 980px;
+	height: 1220px;
+	display: grid;
+	grid-template-columns: repeat(2, auto);
+	grid-auto-rows: 50% 50%;
+	grid-template-areas:
+		"c1  c2 "
+		"c3  c4 ";
+	grid-gap: 0 20px;
+	grid-area: post;
+	align-items: center;
+	padding: 20px;
+	margin: 0 10px 0 12px;
+}
+
+/* to control the cards only */
+.card1,
+.card2,
+.card3,
+.card4 {
+	border: 2px solid #34357f;
+	border-radius: 15px;
+	box-shadow: 2px 3px #888888;
+	width: 450px;
+	height: 550px;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+}
+
+/* to make the shape of the cards different on hover */
+.card1:hover,
+.card2:hover,
+.card3:hover,
+.card4:hover {
+	box-shadow: 2px 5px 10px 10px #202224;
+	opacity: 0.9;
+}
+
+/* ///////////////////////////////////////// */
+
+/* random things */
+
+/* to make website background and scroll better */
+html {
+	background-image: url(../images/background.png);
+	scroll-behavior: smooth;
+}
+
+/* to make width and height of an element  include padding and borders */
+* {
+	box-sizing: border-box;
+}
+
+/* ///////////////////////////////////////// */
+
+/* arrow-up */
+
+/* to control arrow to scroll up */
+.arrow-up {
+	border-radius: 30px;
+	background-color: #f1c40f;
+	width: 30px;
+	height: 30px;
+	position: fixed;
+	bottom: 50px;
+	right: 20px;
+	z-index: +1;
+}
+
+/* to change arrow background on hover */
+.arrow-up:hover {
+	background-color: #27ae60;
+}
+
+/* ///////////////////////////////// */
+
+/* header */
+
+/* to control page header */
+.header {
+	background-color: #2ecc71;
+	border: 3px solid #3498db;
+	border-radius: 40px 6px 40px 6px;
+	box-shadow: 2px 5px 10px 10px #202224;
+	height: 160px;
+	margin: 0;
+	grid-area: hp;
+}
+
+/* to control logo title */
+.logo-title {
+	color: #0f3d0f;
+	font-size: 50px;
+	text-align: left;
+	margin: 10px 10px 0 0;
+	font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+/* to control both logo and title */
+.header-logo {
+	text-shadow: 1px 3px 0 #ffffff;
+	margin: 10px 0 0 10px;
+}
+
+/*to control logo  */
+.logo {
+	width: 60px;
+	height: 60px;
+	float: left;
+	transform: rotate(-30deg);
+	margin: 5px 15px 0 10px;
+}
+
+/* to control header paragraph */
+.header-paragraph {
+	color: #0f3d0f;
+	text-align: right;
+	font-size: 30px;
+	font-style: oblique;
+	letter-spacing: 6px;
+	padding-top: 5px;
+	margin-right: 40px;
+	font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+/* ///////////////////////////////// */
+
+/* title of  the page  */
+
+/* to control site title */
+.blogs-title {
+	border: 3px solid #03a39a;
+	border-radius: 3px 20px 3px 20px;
+	background-color: #fc5c65;
+	color: #003366;
+	width: 340px;
+	height: 100px;
+	margin: 0 0 0 320px;
+	padding: 10px;
+	font-style: italic;
+	grid-area: pt;
+}
+
+/* to control h2 only */
+.blogs-title > h2 {
+	font-size: 50px;
+	text-align: center;
+	margin: 0;
+	padding-top: 5px;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ///////////////////////////////// */
+
+/* cards */
+
+/* to control card 1 */
+.card1 {
+	grid-area: c1;
+	margin: 0;
+}
+
+/* to control card 2 */
+.card2 {
+	grid-area: c2;
+	margin: 0;
+}
+
+/* to control card 3 */
+.card3 {
+	grid-area: c3;
+	margin: 0;
+}
+
+/* to control card 4 */
+.card4 {
+	grid-area: c4;
+	margin: 0;
+}
+
+/* ///////////////////////////////// */
+
+/* sidebar */
+
+/* to control left side bar */
+.side-bar-left {
+	border: 3px solid #b49a7b;
+	border-radius: 13px;
+	background-color: #4b6584;
+	width: 280px;
+	height: 1690px;
+	padding: 10px;
+	margin: 0;
+	font-size: 21px;
+	text-align: justify;
+	grid-area: sbl;
+}
+
+/* to control lift bar text */
+.side-bar-left-text {
+	width: 98%;
+	margin: 20px 0 0 0;
+	padding: 0;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	font-style: italic;
+}
+
+/* to control lift bar title */
+.side-bar-left-title {
+	color: #a3cb38;
+	margin: 0;
+	padding: 0;
+	text-align: justify;
+	font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+/* to control right side bar */
+.side-bar-right {
+	border: 3px solid #b49a7b;
+	background-color: #4b6584;
+	border-radius: 13px;
+	width: 280px;
+	height: 1690px;
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+	margin: 0;
+	text-align: justify;
+	font-size: 21px;
+	grid-area: sbr;
+}
+
+/* to control right bar text */
+.side-bar-right-text {
+	width: 98%;
+	margin: 20px 0 0 0;
+	padding: 0;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	font-style: italic;
+}
+
+/* to control right bar title */
+.side-bar-right-title {
+	color: #a3cb38;
+	margin: 0;
+	padding: 0;
+	font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+/* to make part of the text bold */
+.bold {
+	font-weight: 700;
+}
+
+/* to make part of the text underlined */
+.underline {
+	text-decoration: underline;
+}
+
+/* ///////////////////////////////// */
+
+/* media query */
+
+/* for mobile and tablet together  */
+@media (max-width: 1300px) {
+	.cards-container {
+		height: 40%;
+	}
+
+	.subscribe-buttons {
+		width: 29%;
+	}
+
+	.navbar {
+		height: 2%;
+	}
+
+	.card-tiny-titles p {
+		width: 80%;
+	}
+
+	.logo-div {
+		width: 84%;
+		margin: 0 0 0 8%;
+	}
+
+	.footer-logo-name {
+		margin: 2% 1% 0 12%;
+		padding: 0;
+	}
+
+	.footer-logo {
+		width: 20%;
+		margin: 3% 0 5% 5%;
+	}
+
+	.site-name {
+		margin: 1% 0 0 1%;
+		font-size: 190%;
+	}
+
+	.footer-big-list {
+		margin: 0 0 2% 0;
+	}
+
+	.footer-list li {
+		margin: 5% 0 0 0;
+	}
+
+	.site-name-background {
+		margin: 0 0 0 4%;
+	}
+
+	.header-paragraph {
+		margin: 0 10% 0 0;
+	}
+
+	.footer-big-list {
+		margin: 0 0 2% 0;
+	}
+
+	.header-logo {
+		margin: 3% 0 0 3%;
+	}
+
+	.logo {
+		margin: 2% 5% 5% 3%;
+	}
+
+	.follow-text {
+		margin: 5% 0 0 5%;
+	}
+
+	.facebook-logo {
+		width: 55%;
+		margin: 30% 0 0 40%;
+	}
+
+	.Twitter-logo {
+		width: 60%;
+		margin: 25% 0 0 30%;
+	}
+
+	.LinkedIn-logo {
+		margin: 55% 15% 0 5%;
+	}
+
+	.Instagram-logo {
+		margin: 15% 0 0 40%;
+		width: 30%;
+	}
+
+	.facebook-logo,
+	.Instagram-logo,
+	.LinkedIn-logo {
+		height: 60%;
+	}
+
+	.LinkedIn-logo,
+	.footer-logo-name {
+		width: 70%;
+	}
+
+	.blogs-title,
+	.logo {
+		height: 10%;
+	}
+
+	.side-bar-left-text,
+	.side-bar-right-text {
+		width: 99%;
+	}
+
+	.nav-list li,
+	.header-logo {
+		margin: 0 0 0 3%;
+	}
+
+	.side-bar-right,
+	.side-bar-left {
+		margin: 0 0 3% 0;
+	}
+
+	.cards-container,
+	.header,
+	.blogs-title,
+	.navbar {
+		margin: 0 0 5% 0;
+	}
+
+	.container,
+	.cards-container,
+	.footer-list {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.cards-container,
+	.header,
+	.navbar,
+	.blogs-title,
+	.side-bar-left,
+	.side-bar-right,
+	.image-caption1,
+	.image-caption2,
+	.image-caption3,
+	.image-caption4,
+	.homepage-footer,
+	.card-button,
+	.card-picture,
+	.site-name,
+	.site-name-background,
+	.follow-text {
+		width: 100%;
+	}
+
+	.card1,
+	.card2,
+	.card3,
+	.card4,
+	.header,
+	.logo-title,
+	.subscribe-buttons,
+	.side-bar-left,
+	.side-bar-left-text,
+	.side-bar-right,
+	.side-bar-right-text,
+	.image-caption1,
+	.image-caption2,
+	.image-caption3,
+	.image-caption4,
+	.homepage-footer,
+	.footer-logo-name,
+	.footer-logo,
+	.site-name,
+	.site-name-background,
+	.logo-div,
+	.follow-text {
+		height: auto;
+	}
+
+	.card1,
+	.card2,
+	.card3,
+	.card4 {
+		width: 110%;
+		margin-bottom: 5%;
+	}
+
+	.logo,
+	.logo-title {
+		width: 10%;
+	}
+
+	.footer-logos,
+	.card-read-time,
+	.footer-copyright,
+	.footer-small-list3,
+	.footer-small-list2,
+	.logo-title,
+	.footer-list,
+	.image-caption1,
+	.image-caption2,
+	.image-caption3,
+	.image-caption4,
+	.homepage-footer,
+	.card-tiny-titles p {
+		margin: 0;
+	}
+
+	.header-paragraph,
+	.nav-list li,
+	.Twitter-logo,
+	.LinkedIn-logo,
+	.footer-big-list {
+		float: left;
+	}
+
+	.header-logo,
+	.logo-div {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.header-paragraph,
+	.nav-list li,
+	.nav-list li:hover,
+	.side-bar-left-text,
+	.side-bar-right-text {
+		font-size: 90%;
+	}
+
+	.card-button,
+	.card-picture,
+	.Twitter-logo {
+		height: 50%;
+	}
+
+	.card-tiny-titles p,
+	.follow-text {
+		font-size: 100%;
+	}
+
+	.logo-title {
+		font-size: 240%;
+	}
+
+	.blogs-title > h2 {
+		font-size: 170%;
+	}
+}
+
+/* for small mobiles */
+@media (max-width: 290px) {
+	.card1,
+	.card2,
+	.card3,
+	.card4 {
+		width: 100%;
+	}
+	.card-button {
+		padding: 2%;
+		font-size: 90%;
+		text-align: center;
+	}
+
+	.card-text {
+		padding: 5%;
+		font-size: 80%;
+	}
+
+	.card-tiny-titles {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.card-text h3,
+	.logo-title,
+	.card-tiny-titles p {
+		font-size: 100%;
+		margin: 0;
+	}
+
+	.site-name {
+		font-size: 120%;
+	}
+
+	.side-bar-right-text {
+		font-size: 74%;
+	}
+
+	.footer-small-list3,
+	.footer-logos,
+	.footer-small-list2,
+	.footer-small-list1,
+	.footer-big-list,
+	.footer-list,
+	.card-read-time {
+		margin: 0;
+		padding: 0;
+		white-space: normal;
+	}
+}
+
+/* for medium mobiles */
+@media (min-width: 450px) and (max-width: 700px) {
+	.card1,
+	.card2,
+	.card3,
+	.card4,
+	.site-name-background,
+	.site-name {
+		width: 100%;
+	}
+
+	.footer-copyright {
+		margin-top: 75%;
+	}
+
+	.footer-logo-name {
+		width: 76%;
+		margin: 5% 0 0 10%;
+	}
+
+	.footer-logo {
+		width: 20%;
+		height: auto;
+		margin: 3% 0 5% 5%;
+	}
+
+	.site-name {
+		margin: 1% 0 0 1%;
+		font-size: 440%;
+		height: 100%;
+	}
+
+	.footer-logos {
+		margin-left: 0;
+	}
+}
+
+/* for tablet */
+@media (min-width: 700px) and (max-width: 1300px) {
+	* {
+		margin-left: 0.5%;
+	}
+
+	.logo-title {
+		height: 100%;
+		font-size: 400%;
+	}
+
+	.navbar,
+	.card-button {
+		font-size: 250%;
+	}
+
+	.blogs-title > h2 {
+		font-size: 500%;
+	}
+
+	.side-bar-left-title,
+	.side-bar-right-title,
+	.footer-big-list li li {
+		font-size: 300%;
+	}
+
+	.card1,
+	.card2,
+	.card3,
+	.card4,
+	.header-logo,
+	.logo-title {
+		width: 100%;
+	}
+
+	.card-paragraph,
+	.card-text h3,
+	.card-tiny-titles,
+	.card-read-time {
+		font-size: 150%;
+	}
+
+	.image-caption1,
+	.image-caption2,
+	.image-caption3,
+	.image-caption4,
+	.card-text,
+	.side-bar-right-text,
+	.side-bar-left-text,
+	.header-paragraph {
+		font-size: 200%;
+	}
+
+	.footer-copyright {
+		font-size: 210%;
+		float: left;
+	}
+
+	.arrow-up {
+		width: 8%;
+		height: 8%;
+		border-radius: 50%;
+		right: 5%;
+	}
+
+	.site-name {
+		font-size: 700%;
+	}
+
+	.follow-text {
+		font-size: 280%;
+	}
+
+	.footer-big-list li a {
+		font-size: 100%;
+	}
+}
+
+/* for big tablet */
+@media (min-width: 835px) and (max-width: 1300px) {
+	.logo-title {
+		font-size: 500%;
+	}
+
+	.subscribe-buttons a {
+		margin: 15%;
+	}
+
+	.subscribe-buttons {
+		width: 20%;
+		height: 20%;
+	}
+}
+
+/* to move copy text to bottom */
+@media (min-width: 1247px) and (max-width: 1301px) {
+	.footer-copyright {
+		margin-top: 120%;
+	}
+}
+
+/* ///////////////////////////////// */
+
+/* for desktop */
+@media (min-width: 1301px) {
+	.header,
+	.navbar,
+	.homepage-footer,
+	.side-bar-left,
+	.side-bar-right,
+	.card1,
+	.card2,
+	.card3,
+	.card4,
+	.image-caption1,
+	.image-caption2,
+	.image-caption3,
+	.image-caption4,
+	.card-picture {
+		width: 100%;
+	}
+
+	.side-bar-left,
+	.side-bar-right {
+		height: auto;
+		margin: 0 0 5% 0;
+	}
+
+	.card1,
+	.card2,
+	.card3,
+	.card4,
+	.footer-list,
+	.footer-copyright {
+		margin: 0;
+		padding: 0;
+	}
+
+	.cards-container {
+		width: 95%;
+		grid-gap: 0 5%;
+		margin: 0 0 0 2.5%;
+		padding: 1%;
+	}
+
+	.card-tiny-titles p {
+		margin-right: 40%;
+	}
+
+	.card-read-time {
+		margin-left: 65%;
+	}
+
+	.blogs-title {
+		margin: 0 0 0 30%;
+	}
+
+	.footer-big-list {
+		margin: 5% 20% 0 0;
+	}
+
+	.footer-logos {
+		margin: 0 0 0 2%;
+	}
+}
+
+/* to control container and nav on wide screens */
+@media (min-width: 1450px) {
+	.container {
+		grid-auto-rows: 9% 5% 6% 70% 12%;
+	}
+
+	.blogs-title {
+		margin: 0 auto 0 auto;
+	}
+}
+
+/* to control sides and footer and content container on small desktop screens */
+@media (min-width: 1301px) and (max-width: 1555px) {
+	.side-bar-left,
+	.side-bar-right {
+		height: 110%;
+		margin: 0 0 5% 0;
+	}
+
+	.side-bar-left-text,
+	.side-bar-right-text {
+		height: 40%;
+	}
+
+	.homepage-footer {
+		margin: 17% 0 0 0;
+	}
+}
+
+/* ///////////////////////////////// */

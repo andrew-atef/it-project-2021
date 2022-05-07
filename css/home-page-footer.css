@@ -1,0 +1,189 @@
+@import url("themes.css");
+
+/* to control footer  */
+.homepage-footer {
+	border-radius: 20px 20px 0 0;
+	background-color: #95a5a6;
+	height: 400px;
+	margin: 0;
+	padding: 0;
+	grid-area: ftp;
+	height: 420px;
+}
+
+/* to control all footer logos */
+.footer-logos {
+	float: left;
+	margin-left: 140px;
+}
+
+/* to control footer logo only */
+.footer-logo {
+	border-radius: 5px 25px 5px 25px;
+	background-color: #f1c40f;
+	width: 60px;
+	height: 60px;
+	display: block;
+	margin: 10px 0 15px 15px;
+}
+
+/* to control footer logo name only */
+.site-name {
+	border-radius: 5px;
+	color: #0e3bf0;
+	font-size: 60px;
+	font-weight: 900;
+	margin: 10px 0 0 5px;
+	font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+/* to control footer logo name background only */
+.site-name-background {
+	border-radius: 0 30px 30px 0;
+	background-color: #ffe4c4;
+	margin: 0 0 0 10px;
+	width: 203px;
+	height: 88px;
+	text-align: center;
+	padding: 1px;
+}
+
+/* to control footer logo and name  */
+.footer-logo-name {
+	border: 1px solid #ff751a;
+	border-radius: 30px;
+	background-color: #3498db;
+	width: 290px;
+	height: 90px;
+	display: flex;
+	flex-direction: row;
+	margin: 70px 0 0 0;
+}
+
+/* to control footer logo div only */
+.logo-div {
+	border: #03a39a 2px solid;
+	border-radius: 20px;
+	background-color: #4b6584;
+	width: 290px;
+	height: 160px;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: row;
+	float: left;
+	flex-wrap: wrap;
+}
+
+/* to control footer follow text only  */
+.follow-text {
+	color: #b69c7c;
+	font-size: 20px;
+	text-align: center;
+	margin: 17px 0 0 17px;
+	float: left;
+	font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+/* to make logos in a row */
+.footer-social-logos {
+	display: flex;
+	flex-direction: row;
+	margin: 0;
+	padding: 0;
+	float: left;
+}
+
+/* to control footer facebook logo only  */
+.facebook-logo {
+	width: 40px;
+	height: 40px;
+	margin: 10px 0 0 15px;
+}
+
+/* to control footer Instagram logo only  */
+.Instagram-logo {
+	width: 50px;
+	height: 45px;
+	margin: 6px 0 0 10px;
+}
+
+/* to control footer Twitter logo only  */
+.Twitter-logo {
+	width: 50px;
+	height: 40px;
+	margin: 10px 10px 0 10px;
+}
+
+/* to control footer LinkedIn logo only  */
+.LinkedIn-logo {
+	width: 35px;
+	height: 35px;
+	margin: 10px 0 0 15px;
+}
+
+/* to control footer list only  */
+.footer-list {
+	display: flex;
+	flex-direction: row;
+	margin: 0 0 0 320px;
+	padding: 65px 0 0 0;
+}
+
+/* to control footer list a only  */
+.footer-list a {
+	color: #1b6698;
+	font-size: 15px;
+	font-weight: bold;
+	text-decoration: none;
+	letter-spacing: 1px;
+	margin: 0;
+}
+
+/* to make footer list a different on hover  */
+.footer-list a:hover {
+	background-color: #27ae60;
+	box-shadow: 2px 5px 10px 5px #f1c40f;
+}
+
+/* to control footer list li only  */
+.footer-list li {
+	display: flex;
+	flex-direction: column;
+	list-style-type: none;
+	margin: 7px 0 0 0;
+}
+
+/* to control footer big list  only  */
+.footer-big-list {
+	margin: 20px 0 0 220px;
+	white-space: nowrap;
+	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+		"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+/* to control footer small list 2  only  */
+.footer-small-list2 {
+	margin: 0 0 0 197px;
+}
+
+/* to control footer small list 3  only  */
+.footer-small-list3 {
+	margin: 0 0 0 116px;
+}
+
+/* to control footer list titles only  */
+.footer-list-titles {
+	color: #2f3437;
+	font-weight: 600;
+	letter-spacing: 5px;
+	margin: 0;
+}
+
+/* to control footer copyright only  */
+.footer-copyright {
+	color: #3a4545;
+	margin: 170px 20px 20px 0;
+	float: right;
+	font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
