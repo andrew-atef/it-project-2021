@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>A1 - Buy Now</title>
+		<link
+			rel="shortcut icon"
+			type="image/x-icon"
+			href="../media/images/A1_logo.png"
+		/>
+		<!-- CSS -->
+		<link href="../css/buy_now.css" rel="stylesheet" />
+		<link rel="stylesheet" id="switcher-id" href="" />
+	</head>
+	<body>
+		<nav class="navbar">
+			<ul class="nav-list">
+				<li>
+					<a target="_self" href="../index.html">Home</a>
+				</li>
+				<li>
+					<a target="_self" href="../html/contact.html">Contact Us</a>
+				</li>
+				<li>
+					<a target="_self" href="../html/about.html">About Us</a>
+				</li>
+				<li>
+					<a target="_self" href="../html/todays_deal.html">Today's Deals</a>
+				</li>
+				<li>
+					<a target="_self" href="../html/feedback.html">Feedback</a>
+				</li>
+				<li>
+					<a href="../html/departments.html">Departments</a>
+				</li>
+				<li>
+					<a target="_self" href="../html/account.html">Account</a>
+				</li>
+				<li>
+					<a target="_self" href="../html/customer_service.html"
+						>Customer Service</a
+					>
+				</li>
+				<li>
+					<a target="_self" href="../html/Privacy.html">Privacy</a>
+				</li>
+				<li class="subscribe-buttons">
+					<a target="_self" href="../html/sign_in.html">Sign in</a>
+				</li>
+				<li class="subscribe-buttons">
+					<a target="_self" href="../html/log_in.html">Log in</a>
+				</li>
+				<li class="cart">
+					<a href="../html/shopping_cart.html">
+						<ion-icon name="basket"></ion-icon><span>0</span>
+					</a>
+				</li>
+				<li class="theme-switches">
+					<div data-theme="light" class="switch" id="switch-1"></div>
+				</li>
+				<li class="theme-switches">
+					<div data-theme="dark" class="switch" id="switch-4"></div>
+				</li>
+			</ul>
+		</nav>
+		<div class="container">
+			<form
+				name="my_form"
+				method="post"
+				action="../html/index.html"
+				onsubmit="return validateemail()"
+			>
+				<label for="fname">Name</label>
+				<input type="text" id="fname" name="name" placeholder="Your name.." />
+				<label for="fname">Email</label>
+				<input type="text" id="fname" name="email" placeholder="Your Email.." />
+
+				<label for="lname">Phone Number</label>
+				<input
+					type="text"
+					id="lname"
+					name="number"
+					placeholder="Phone Number.."
+				/>
+				<span id="numloc"></span>
+
+				<label for="country">Country</label>
+				<select id="country" name="country">
+					<option value="australia">Australia</option>
+					<option value="canada">Canada</option>
+					<option value="usa">USA</option>
+				</select>
+				<label for="lname">Address</label>
+				<input type="text" id="lname" name="address" placeholder="Address.." />
+				<label for="lname">City</label>
+				<input type="text" id="lname" name="city" placeholder="City.." />
+				<label for="lname">Zip Code</label>
+				<input
+					type="text"
+					id="lname"
+					name="zip_code"
+					placeholder="Zip Code.."
+				/>
+				<input type="submit" value="Submit" />
+			</form>
+		</div>
+		<footer class="homepage-footer">
+			<div class="footer-logos">
+				<div class="footer-logo-name">
+					<img
+						src="../media/images/A1_logo.png"
+						class="footer-logo"
+						alt="logo"
+					/>
+					<div class="site-name-background">
+						<h4 class="site-name">A1</h4>
+					</div>
+				</div>
+				<div class="logo-div">
+					<p class="follow-text">" Follow Us On Social Media "</p>
+					<div class="footer-social-logos">
+						<a href="https://www.facebook.com" target="_blank">
+							<img
+								src="../media/images/facebook-logo.png"
+								alt="facebook-logo"
+								class="facebook-logo"
+							/>
+						</a>
+						<a href="https://www.instagram.com" target="_blank">
+							<img
+								src="../media/images/Instagram-logo.png"
+								alt="Instagram-logo"
+								class="Instagram-logo"
+							/>
+						</a>
+						<a href="https://www.linkedin.com" target="_blank">
+							<img
+								src="../media/images/linkedin-logo.png"
+								alt="LinkedIn-logo"
+								class="LinkedIn-logo"
+							/>
+						</a>
+						<a href="https://www.twitter.com" target="_blank">
+							<img
+								src="../media/images/twitter-logo.png"
+								alt="Twitter-logo"
+								class="Twitter-logo"
+							/>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="footer-big-list">
+				<ul class="footer-list">
+					<li>
+						<ul class="footer-small-list1">
+							<li><p class="footer-list-titles">A1</p></li>
+							<li>
+								<a href="../index.html">Home</a>
+							</li>
+							<li>
+								<a href="../html/departments.html">Departments</a>
+							</li>
+							<li>
+								<a href="../html/todays_deal.html">Today's Deals</a>
+							</li>
+							<li>
+								<a href="../html/about.html">About Us</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<ul class="footer-small-list2">
+							<li><p class="footer-list-titles">Contact</p></li>
+							<li>
+								<a href="../html/contact.html">Contact Us</a>
+							</li>
+							<li>
+								<a href="../html/customer_service.html">Customer Service</a>
+							</li>
+							<li>
+								<a href="../html/feedback.html">Feed Back</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<ul class="footer-small-list3">
+							<li><p class="footer-list-titles">Profile</p></li>
+							<li>
+								<a href="../html/account.html">Account</a>
+							</li>
+							<li>
+								<a href="../html/Privacy.html">Privacy</a>
+							</li>
+							<li>
+								<a href="../html/shopping_cart.html">Cart</a>
+							</li>
+							<li>
+								<a href="../html/sign_in.html">Sign In</a>
+							</li>
+							<li>
+								<a href="../html/log_in.html">Log In</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<p class="footer-copyright">
+				Copyright © 2020 A1 Inc. All rights reserved.
+			</p>
+		</footer>
+		<script src="../js/buy_now.js"></script>
+	</body>
+</html>

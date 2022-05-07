@@ -1,0 +1,105 @@
+@import url("home-page-navbar.css");
+@import url("home-page-footer.css");
+@import url("themes.css");
+
+body {
+	background-color: lightgray;
+}
+
+.main {
+	padding: 15px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.card-text-center-sidebar {
+	background-color: #333;
+	color: white;
+	margin-top: 40px;
+	margin-left: 240px;
+	height: 823px;
+	width: 250px;
+}
+
+.card-text-center-sidebar a {
+	margin-left: 10px;
+	display: block;
+	color: white;
+	padding-bottom: 10px;
+	font-size: 30px;
+	text-decoration: none;
+}
+
+.card-body {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+}
+
+.card-body img {
+	align-items: left;
+	margin-left: 50px;
+	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+	border-radius: 50%;
+}
+
+.card-mb-3-content {
+	background-color: whitesmoke;
+}
+
+.mt-3 {
+	align-items: left;
+	margin-left: 50px;
+	padding-bottom: 50px;
+	display: flex;
+	flex-direction: column;
+}
+
+.mt-3 a {
+	padding-bottom: 70px;
+	padding-top: 20px;
+}
+
+.mt-3 h3 {
+	align-items: left;
+	margin-left: 10px;
+	display: flex;
+	flex-direction: column;
+}
+
+.row {
+	align-items: left;
+	display: flex;
+	flex-direction: row;
+	padding-right: 20px;
+}
+
+.card-mb-3-content {
+	margin-top: 0;
+	margin-left: 50px;
+	width: 800px;
+}
+
+.col-md-8-mt-1 {
+	margin-top: 0;
+	padding-top: 0;
+}
+
+.m-3-pt-3 {
+	margin: 40px 0 0 0;
+	padding: 40px 0 0 40px;
+}
+
+.col-md-3 {
+	margin: 0 0 40px 20px;
+	padding: 0 0 0 40px;
+}
+
+.col-md-9-text-secondary {
+	margin: 0 0 40px 20px;
+	padding: 60px 40px 0 0;
+	align-items: left;
+	display: flex;
+	flex-direction: column;
+}

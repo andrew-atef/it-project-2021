@@ -1,0 +1,63 @@
+@import url("themes.css");
+
+/* to control navbar */
+.navbar {
+	border: 2px solid #1779cf;
+	border-radius: 5px;
+	background-color: #e67e22;
+	box-shadow: 1px 5px #146bb8;
+	height: 60px;
+	width: 1565px;
+	padding: 10px;
+	margin: 0 0 15px 0;
+	z-index: +2;
+	grid-area: nb;
+}
+
+/* to control nav list only */
+.nav-list {
+	padding: 0;
+	overflow: hidden;
+	list-style-type: none;
+	letter-spacing: 3px;
+	margin: 0;
+}
+
+/* to control nav list li only */
+.nav-list li {
+	float: left;
+	font-size: 20px;
+	height: 40px;
+	margin: 0 10px 0 0;
+}
+
+.cart {
+	height: 50px;
+	width: 50px;
+	padding: 0 0 15px 0;
+}
+
+/* to control nav list li a only */
+.nav-list li a {
+	display: block;
+	color: #0d0d0d;
+	padding: 5px 0 5px 0;
+	text-align: center;
+	text-decoration: none;
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+/* to make nav list li different on hover */
+.nav-list li:hover {
+	background-color: #f1c40f;
+	border-radius: 5px;
+	font-size: 23px;
+}
+
+/* to control subscribe buttons only */
+.subscribe-buttons {
+	width: 100px;
+	background-color: darkcyan;
+	border-radius: 5px;
+	font-style: italic;
+}

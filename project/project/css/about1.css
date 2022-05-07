@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap");
+@import url("home-page-navbar.css");
+@import url("home-page-footer.css");
+@import url("themes.css");
+
+.about_sections {
+	margin: 0 12% 0 12%;
+}
+
+.center {
+	font-family: "Poppins", arial, tahoma;
+	padding: 80px;
+	color: white;
+	text-align: center;
+	font-size: 60px;
+	font-weight: 500;
+	line-height: 1.1;
+}
+
+.img_top {
+	float: right;
+	margin: 0 0 0 15px;
+	width: 325px;
+	height: 300px;
+}
+
+.img_bottom {
+	float: right;
+	margin: 0 15px 0 0;
+	width: 325px;
+	height: 270px;
+	padding-right: 50px;
+}
+
+p.left {
+	font-size: 27px;
+	font-family: "Tapestry", cursive;
+	color: #808080;
+}
+
+p.right {
+	font-size: 27px;
+	font-family: "Tapestry", cursive;
+	color: #808080;
+}
+
+.about_section {
+	padding-top: 150px;
+}
+
+.about_title {
+	background-image: url("../media/images/bg-breadcrumb.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 250px;
+	margin-top: -40px;
+}
+
+.img_middle {
+	float: left;
+	margin: 0 15px 0 0;
+	width: 325px;
+	height: 270px;
+	padding-right: 50px;
+}
+
+p.middle_about {
+	font-size: 27px;
+	font-family: "Tapestry", cursive;
+	color: #808080;
+}
+.center_our_services {
+	font-family: "Poppins", arial, tahoma;
+	padding: 80px;
+	color: black;
+	text-align: center;
+	font-size: 60px;
+	font-weight: 500;
+	line-height: 1.1;
+}
+
+.our_services_image_left {
+	width: 130px;
+	height: 130px;
+}
+
+.our_services_image_right {
+	width: 130px;
+	height: 130px;
+}
+
+.blank_div {
+	width: 35%;
+}
+
+.our_service {
+	width: 100%;
+	display: flex;
+}
+
+.headphones_about {
+	width: 15%;
+	text-align: center;
+	padding-right: 250px;
+}
+
+.shop_about {
+	text-align: center;
+	width: 15%;
+}
+
+.headphones {
+	font-size: 20px;
+	font-family: "Tapestry", cursive;
+}
+
+.shop {
+	font-size: 20px;
+	font-family: "Tapestry", cursive;
+}
+
+a.link1 {
+	color: #8b4513;
+	text-decoration: none;
+}
+
+a.link2 {
+	color: #8b4513;
+	text-decoration: none;
+}
+
+.link1:hover {
+	color: #808080;
+}
+.link2:hover {
+	color: #808080;
+}

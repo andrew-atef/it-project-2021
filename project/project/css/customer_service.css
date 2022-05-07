@@ -1,0 +1,154 @@
+@import url("home-page-navbar.css");
+@import url("home-page-footer.css");
+@import url("themes.css");
+
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 80vh;
+	font-family: "work sans", sans-serif;
+	background-color: white;
+}
+.box {
+	width: 80%;
+	height: 85%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border: 1px solid #eee;
+	box-shadow: 0px 0px 8px 0 lightblue;
+	border-radius: 10px;
+	position: relative;
+	background-color: #222;
+	margin-bottom: 40px;
+}
+.top {
+	width: 100%;
+	height: 80px;
+	background: lightgray;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+.top h1 {
+	color: #fff;
+	margin: 0;
+	font-size: 30px;
+	text-align: center;
+	/* padding-left: 20px; */
+	padding-top: 19px;
+	letter-spacing: 1px;
+}
+.mid {
+	width: 70%;
+	height: 80px;
+	background: lightgray;
+	overflow: hidden;
+	border: 1px solid #eee;
+	height: 150px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.mid p {
+	margin: 0;
+	font-size: 26px;
+	font-weight: 500;
+	color: grey;
+	/* padding: 50px 20px;*/
+	letter-spacing: 0.04em;
+}
+.chat-input {
+	width: 100%;
+	height: 80px;
+	overflow: hidden;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	margin-right: 20px;
+}
+.chat-input .input {
+	width: 75%;
+	height: 50px;
+}
+.input input {
+	width: 100%;
+	height: 60px;
+	font-size: 22px;
+	outline: none;
+	border: none;
+	padding-left: 10px;
+	/* padding-top: 0; */
+	background: lightgray;
+	color: rgb(28, 6, 6);
+	border-radius: 20px;
+}
+.chat-input .chat-icons {
+	width: 55px;
+	height: 55px;
+	border-radius: 45%;
+	background-color: lightblue;
+	font-size: 25px;
+	margin: 10px 5px 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+@media (max-width: 415px) {
+	.box {
+		width: 350px;
+	}
+	.mid {
+		width: 80%;
+		height: 120px;
+	}
+	.mid p {
+		font-size: 22px;
+	}
+	.input input {
+		font-size: 17px;
+		border-radius: 20px;
+	}
+}
+@media (width: 280px) {
+	.box {
+		width: 250px;
+	}
+	.top h1 {
+		font-size: 20px;
+	}
+	.mid {
+		height: 80px;
+	}
+	.mid p {
+		font-size: 18px;
+	}
+	.chat-input .input {
+		height: 10px;
+	}
+	.input input {
+		width: 100%;
+		height: 40px;
+		font-size: 12px;
+	}
+	.chat-input .chat-icons {
+		width: 40px;
+		height: 40px;
+		margin-top: 30px;
+	}
+}
+@media (min-width: 1024px) {
+	.box {
+		height: 95%;
+		width: 42%;
+	}
+}
