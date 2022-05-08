@@ -50,9 +50,9 @@ for (let i of switches) {
 
 function setTheme(theme) {
   if (theme == 'light') {
-    document.getElementById('switcher-id').href = '../css/light_theme.css';
+    document.getElementById('switcher-id').href = './css/light_theme.css';
   }else if (theme == 'dark') {
-    document.getElementById('switcher-id').href = '../css/dark_theme.css';
+    document.getElementById('switcher-id').href = './css/dark_theme.css';
   }
   localStorage.setItem('style', theme);
 }
